@@ -1,19 +1,86 @@
 header {
     width: $content-width;
     height: 200px;
-    background-color: blue;
+   padding-top: 50px;
     margin: 0 auto;
+    .lilHero {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+          ), url(../images/tours.png);
+        width: 981px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 60px;
+            color: $site-white;
+            font-family: GillSansReg;
+            
+            
+        }
+    }
 }
 .countries {
-    background-color: pink;
+    
     margin: 0 auto;
     width: 818px;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 50px;
+    padding-top: 80px;
     .countryBox {
         margin: 16px;
         width: 236px;
         height: 304px;
         background-color: green;
+        .textContent {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            padding-top: 40px;
+            color: $site-white;
+            font-family: GillSansReg;
+            h1 {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 30px;
+            }
+        }
+        .buttonContain {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button {
+                width: 133px;
+        height: 40px;
+        font-family: GillSansReg;
+        font-size: 15px;
+        background-color: $site-blue;
+        color: $site-white;
+        border: none;
+        border-radius: 30px;
+        font-size: 15px;
+        margin-top: 30px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 800px) {
+    .countries {
+        width: auto;
+        padding: 0 20px;
+        justify-content: center;
+    }
+
+    .countryBox {
+        width: 100%;
+        max-width: 300px;
     }
 }

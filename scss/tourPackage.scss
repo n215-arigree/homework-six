@@ -1,0 +1,128 @@
+.tourPackage {
+  header {
+    margin-top: 20px;
+    height: 413px;
+    width: 981px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    h1 {
+        padding: 10px;
+        font-size: 80px;
+        color: $site-white;
+        font-family: GillSansReg;
+    }
+    .right {
+        text-align: right;
+        h4 {
+        font-size: 30px;
+        color: $site-white;
+        font-family: GillSansReg;
+        padding: 10px;
+        padding-top: 250px;
+    }
+    }
+    
+  }
+  .images {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .img {
+      height: 347px;
+      width: 298px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .dayContainer {
+    margin: 0 auto;
+    width: 981px;
+    
+    .day {
+        padding-top: 10px;
+        h1 {
+        font-size: 60px;
+        color: black;
+        font-family: GillSansReg;
+    }
+        p{
+            font-size: 16px;
+            color: black;
+        font-family: GillSansReg;
+        }
+    }
+    hr {
+        width: 171px;
+    }
+    .buttonContain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+        button {
+            width: 133px;
+            height: 40px;
+            font-family: GillSansReg;
+            font-size: 15px;
+            background-color: $site-blue;
+            color: $site-white;
+            border: none;
+            border-radius: 30px;
+            font-size: 15px;
+            margin-top: 30px;
+    }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .tourPackage header {
+    width: 100%;
+      h1 {
+        
+      }
+      .right h4 {
+    
+        padding-top: 100px;
+        h4 {
+            text-align: left;
+        }
+      }
+    }
+    .tourPackage .images {
+        
+        flex-direction: column;
+       .img {
+        margin: 20px;
+    } 
+    }
+    
+    .tourPackage .dayContainer {
+      width: 100%;
+      padding: 0 10px;
+      
+      .day {
+        width: 100%;
+        h1 {
+          
+        }
+        p {
+          width: 100%;
+        }
+      }
+      hr {
+        
+      }
+      .buttonContain {
+        button {
+           
+        }
+      }
+    }
+  }

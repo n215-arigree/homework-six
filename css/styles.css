@@ -81,7 +81,7 @@ nav .links {
   font-size: 15px;
 }
 .home .hero h1 {
-  font-family: ProximaNovaEBld;
+  font-family: GillSansReg;
   font-size: 60px;
 }
 .home .hero p {
@@ -108,12 +108,12 @@ nav .links {
   background-color: green;
 }
 .home .specials .box h1 {
-  font-family: ProximaNovaExCond;
+  font-family: GillSansReg;
   font-size: 60px;
   color: #ffffff;
 }
 .home .specials .box h2 {
-  font-family: ProximaNovaExCond;
+  font-family: GillSansReg;
   font-size: 30px;
   color: #ffffff;
 }
@@ -133,7 +133,7 @@ nav .links {
   width: 818px;
   margin: 0 auto;
   margin-bottom: 30px;
-  font-family: ProximaNovaExCond;
+  font-family: GillSansReg;
   font-size: 30px;
 }
 .home .form {
@@ -326,11 +326,11 @@ nav .links {
   margin-bottom: 36px;
 }
 .about .container h1 {
-  font-family: ProximaNovaExCond;
+  font-family: GillSansReg;
   font-size: 60px;
 }
 .about h2 {
-  font-family: ProximaNovaExCond;
+  font-family: GillSansReg;
   font-size: 40px;
 }
 .about hr {
@@ -402,16 +402,30 @@ nav .links {
 header {
   width: 980px;
   height: 200px;
-  background-color: blue;
+  padding-top: 50px;
   margin: 0 auto;
+}
+header .lilHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/tours.png);
+  width: 981px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .lilHero h1 {
+  font-size: 60px;
+  color: #ffffff;
+  font-family: GillSansReg;
 }
 
 .countries {
-  background-color: pink;
   margin: 0 auto;
   width: 818px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 50px;
+  padding-top: 80px;
 }
 .countries .countryBox {
   margin: 16px;
@@ -419,7 +433,156 @@ header {
   height: 304px;
   background-color: green;
 }
+.countries .countryBox .textContent {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding-top: 40px;
+  color: #ffffff;
+  font-family: GillSansReg;
+}
+.countries .countryBox .textContent h1 {
+  font-size: 50px;
+}
+.countries .countryBox .textContent h2 {
+  font-size: 30px;
+}
+.countries .countryBox .buttonContain {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countries .countryBox .buttonContain button {
+  width: 133px;
+  height: 40px;
+  font-family: GillSansReg;
+  font-size: 15px;
+  background-color: #79ADDC;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-top: 30px;
+}
 
+@media (max-width: 800px) {
+  .countries {
+    width: auto;
+    padding: 0 20px;
+    justify-content: center;
+  }
+  .countryBox {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.tourPackage header {
+  margin-top: 20px;
+  height: 413px;
+  width: 981px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+.tourPackage header h1 {
+  padding: 10px;
+  font-size: 80px;
+  color: #ffffff;
+  font-family: GillSansReg;
+}
+.tourPackage header .right {
+  text-align: right;
+}
+.tourPackage header .right h4 {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: GillSansReg;
+  padding: 10px;
+  padding-top: 250px;
+}
+.tourPackage .images {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tourPackage .images .img {
+  height: 347px;
+  width: 298px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tourPackage .dayContainer {
+  margin: 0 auto;
+  width: 981px;
+}
+.tourPackage .dayContainer .day {
+  padding-top: 10px;
+}
+.tourPackage .dayContainer .day h1 {
+  font-size: 60px;
+  color: black;
+  font-family: GillSansReg;
+}
+.tourPackage .dayContainer .day p {
+  font-size: 16px;
+  color: black;
+  font-family: GillSansReg;
+}
+.tourPackage .dayContainer hr {
+  width: 171px;
+}
+.tourPackage .dayContainer .buttonContain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.tourPackage .dayContainer .buttonContain button {
+  width: 133px;
+  height: 40px;
+  font-family: GillSansReg;
+  font-size: 15px;
+  background-color: #79ADDC;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .tourPackage header {
+    width: 100%;
+  }
+  .tourPackage header .right h4 {
+    padding-top: 100px;
+  }
+  .tourPackage header .right h4 h4 {
+    text-align: left;
+  }
+  .tourPackage .images {
+    flex-direction: column;
+  }
+  .tourPackage .images .img {
+    margin: 20px;
+  }
+  .tourPackage .dayContainer {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .tourPackage .dayContainer .day {
+    width: 100%;
+  }
+  .tourPackage .dayContainer .day p {
+    width: 100%;
+  }
+}
 footer {
   height: 100px;
   background-color: #79ADDC;
