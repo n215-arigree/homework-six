@@ -1,0 +1,54 @@
+footer {
+    height: 100px;
+    background-color: $site-blue;
+    .footContent{
+        margin: 0 auto;
+        width: $content-width;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            font-family: GillSansReg;
+            font-size: 20px;
+            padding-top: 20px;
+            width: 92px;
+            height: 42px;
+            border: 2px solid $site-white;
+            color: $site-white;
+          }
+          p {
+            color: $site-white;
+            font-family: GillSansReg;
+            font-size: 12px;
+          }
+          .icons {
+            color: $site-white;
+            margin: 30px;
+            i {
+            width: 22.26px;
+            height: 22.26px;
+            
+            }
+          }
+    }
+
+   
+}
+
+// @media all and (max-width: 920px) {
+//     body {
+//         position: relative;
+//     }
+//     .app {
+//         position: relative;
+//     }
+//     .home {
+//         padding-bottom: 100px; 
+//     }
+
+//     footer {
+//         width: 100%;
+//         position: absolute;
+//         bottom: 0;
+//     }
+// }

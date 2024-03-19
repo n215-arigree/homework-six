@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+nav {
+  height: 65px;
+  width: 980px;
+  margin: 0 auto;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #000000;
+  position: relative;
+  z-index: 1;
+}
+nav a {
+  font-family: GillSansReg;
+  height: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000000;
+  margin: 10px;
+  border-right: 1px solid #79ADDC;
+  padding-right: 10px;
+}
+nav .logo {
+  font-family: GillSansReg;
+  font-size: 20px;
+  padding-top: 20px;
+  width: 92px;
+  height: 42px;
+  border: 2px solid #000000;
+  color: #000000;
+}
+nav .links {
+  min-width: 300px;
+  height: 42px;
+  text-align: center;
+  display: flex;
+  color: #000000;
+}
+
+@media all and (max-width: 920px) {
+  nav {
+    width: 100%;
+  }
+}
+.home {
+  margin-top: -65px;
+  height: 1600px;
+}
+.home .hero {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .hero button {
+  width: 121.62px;
+  height: 40.04px;
+  background-color: #79ADDC;
+  color: #ffffff;
+  border: none;
+  font-size: 15px;
+}
+.home .hero h1 {
+  font-family: ProximaNovaEBld;
+  font-size: 60px;
+}
+.home .hero p {
+  width: 420px;
+  text-align: center;
+  font-family: GillSansI;
+  font-size: 20px;
+}
+.home .specials {
+  width: 818px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.home .specials .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 304px;
+  width: 236px;
+  background-color: green;
+}
+.home .specials .box h1 {
+  font-family: ProximaNovaExCond;
+  font-size: 60px;
+  color: #ffffff;
+}
+.home .specials .box h2 {
+  font-family: ProximaNovaExCond;
+  font-size: 30px;
+  color: #ffffff;
+}
+.home .specials .box button {
+  width: 133px;
+  height: 40px;
+  font-family: GillSansReg;
+  font-size: 15px;
+  background-color: #79ADDC;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+.home .title {
+  width: 818px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-family: ProximaNovaExCond;
+  font-size: 30px;
+}
+.home .form {
+  font-family: GillSansL;
+  font-size: 18px;
+  width: 818px;
+  margin: 0 auto;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .form ::placeholder {
+  color: black;
+  font-family: GillSansL;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.home .form .formText {
+  width: 818px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .form input {
+  margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 58px;
+  width: 453px;
+  border: 2px solid;
+  border-color: #79ADDC;
+  font-size: 18px;
+}
+.home .form .calContain {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 818px;
+  height: 250px;
+}
+.home .form .calContain .cal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.home .form .calContain .cal input {
+  width: 698px;
+  height: 58px;
+  font-family: GillSansL;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.home .form .calContain .calSelect {
+  height: 58px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .form .calContain .calSelect select {
+  width: 108px;
+  height: 58px;
+  border: 2px solid;
+  border-color: #79ADDC;
+  font-family: GillSansL;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.home .form textarea {
+  width: 818px;
+  height: 192px;
+  border: 2px solid;
+  border-color: #79ADDC;
+}
+.home .form button {
+  margin-top: 37px;
+  width: 818px;
+  height: 60.59px;
+  background-color: #79ADDC;
+  border: none;
+  color: #ffffff;
+  border-radius: 30px;
+  font-family: GillSansReg;
+  font-size: 15px;
+}
+
+@media all and (max-width: 800px) and (min-width: 921px) {
+  .form {
+    background-color: green;
+  }
+  .form .formText {
+    background-color: blue;
+  }
+}
+@media all and (max-width: 920px) {
+  .home {
+    width: 100%;
+    height: 2500px;
+    padding-bottom: 100px;
+  }
+  .home .specials {
+    width: 100%;
+    flex-direction: column;
+  }
+  .home .specials .box {
+    margin-bottom: 30px;
+  }
+  .home .title {
+    width: 100%;
+  }
+  .home .form {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  .home .form .formText {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .home .form .formText input {
+    width: 344px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .home .form .calContain {
+    width: 100%;
+  }
+  .home .form .calContain .cal {
+    justify-content: center;
+  }
+  .home .form .calContain .cal input {
+    width: 344px;
+  }
+  .home .form textarea#message {
+    width: 100%;
+  }
+  .home .form button {
+    width: 344px;
+  }
+}
+@font-face {
+  font-family: ProximaNovaExCond;
+  src: url(../fonts/Proxima-Nova-ExCn-Reg.otf);
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(../fonts/Proxima_Nova_Reg.ttf);
+}
+@font-face {
+  font-family: ProximaNovaEBld;
+  src: url(../fonts/proxima-nova-12.ttf);
+}
+@font-face {
+  font-family: ProximaNovaThin;
+  src: url(../fonts/Proxima-Nova-Thin.otf);
+}
+@font-face {
+  font-family: GillSansI;
+  src: url(../fonts/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: GillSansReg;
+  src: url(../fonts/GillSans.ttf);
+}
+@font-face {
+  font-family: GillSansL;
+  src: url(../fonts/GillSans-Light.ttf);
+}
+.about {
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 980px;
+  margin-bottom: 100px;
+}
+.about .container {
+  font-family: GillSansReg;
+  padding-bottom: 40px;
+}
+.about .container hr {
+  border: 1px solid black;
+  width: 150px;
+  margin-bottom: 36px;
+}
+.about .container h1 {
+  font-family: ProximaNovaExCond;
+  font-size: 60px;
+}
+.about h2 {
+  font-family: ProximaNovaExCond;
+  font-size: 40px;
+}
+.about hr {
+  border: 1px solid black;
+  width: 220px;
+  margin-bottom: 36px;
+}
+.about .quotes {
+  display: flex;
+  font-family: GillSansI;
+  margin-top: 37px;
+  width: 722px;
+  height: 150px;
+}
+.about .quotes .photo {
+  width: 260px;
+  height: 150px;
+  background-color: orange;
+  margin-right: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .quotes p {
+  width: 462px;
+}
+
+@media all and (max-width: 750px) {
+  .about {
+    padding-left: 30px;
+    height: 950px;
+    width: 100%;
+  }
+  .about .container {
+    width: 100%;
+  }
+  .about .quotes {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+  }
+  .about .quotes .photo {
+    height: 150px;
+  }
+  .about .quotes p {
+    width: 80%;
+  }
+}
+@media all and (max-width: 990px) {
+  .about {
+    padding-left: 30px;
+    height: 950px;
+    width: 100%;
+  }
+  .about .container {
+    width: 100%;
+  }
+  .about .quotes {
+    width: 100%;
+  }
+  .about .quotes .photo {
+    height: 150px;
+  }
+  .about .quotes p {
+    width: 80%;
+  }
+}
+header {
+  width: 980px;
+  height: 200px;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+.countries {
+  background-color: pink;
+  margin: 0 auto;
+  width: 818px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.countries .countryBox {
+  margin: 16px;
+  width: 236px;
+  height: 304px;
+  background-color: green;
+}
+
+footer {
+  height: 100px;
+  background-color: #79ADDC;
+}
+footer .footContent {
+  margin: 0 auto;
+  width: 980px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footContent .logo {
+  font-family: GillSansReg;
+  font-size: 20px;
+  padding-top: 20px;
+  width: 92px;
+  height: 42px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+footer .footContent p {
+  color: #ffffff;
+  font-family: GillSansReg;
+  font-size: 12px;
+}
+footer .footContent .icons {
+  color: #ffffff;
+  margin: 30px;
+}
+footer .footContent .icons i {
+  width: 22.26px;
+  height: 22.26px;
+}
+
+/*# sourceMappingURL=styles.css.map */

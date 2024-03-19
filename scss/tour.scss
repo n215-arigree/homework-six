@@ -1,0 +1,19 @@
+header {
+    width: $content-width;
+    height: 200px;
+    background-color: blue;
+    margin: 0 auto;
+}
+.countries {
+    background-color: pink;
+    margin: 0 auto;
+    width: 818px;
+    display: flex;
+    flex-wrap: wrap;
+    .countryBox {
+        margin: 16px;
+        width: 236px;
+        height: 304px;
+        background-color: green;
+    }
+}

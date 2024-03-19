@@ -1,0 +1,265 @@
+.home {
+  margin-top: -65px;
+  height: 1600px;
+  .hero {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $site-white;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ), url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    button {
+        width: 121.62px;
+        height: 40.04px;
+        background-color: $site-blue;
+        color: $site-white;
+        border: none;
+        font-size: 15px;
+    }
+    h1 {
+      font-family: ProximaNovaEBld;
+        font-size: 60px;
+    }
+    p {
+        width: 420px;
+        text-align: center;
+        font-family: GillSansI;
+        font-size: 20px;
+    }
+  }
+  .specials {
+    width: $home-content-width;
+    margin: -50px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+      height: 304px;
+      width: 236px;
+      background-color: green;
+      h1 {
+        font-family: ProximaNovaExCond;
+        font-size: 60px;
+        color: $site-white;
+      }
+      h2 {
+        font-family: ProximaNovaExCond;
+        font-size: 30px;
+        color: $site-white;
+      }
+      button {
+        width: 133px;
+        height: 40px;
+        font-family: GillSansReg;
+        font-size: 15px;
+        background-color: $site-blue;
+        color: $site-white;
+        border: none;
+        border-radius: 30px;
+        font-size: 15px;
+        margin-top: 30px;
+      }
+    }
+  }
+  .title {
+    width: $home-content-width;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: ProximaNovaExCond;
+    font-size: 30px;
+  }
+  .form {
+    font-family: GillSansL;
+    font-size: 18px;
+    ::placeholder {
+        color: black;
+        font-family: GillSansL;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    width: $home-content-width;
+    margin: 0 auto;
+    min-height: 400px;
+    // background-color: coral;
+    display: flex;
+    flex-wrap: wrap;
+    .formText{
+        width: $home-content-width;
+        // background-color: coral;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input {
+    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 58px;
+      width: 453px;
+      border: 2px solid;
+      border-color: $site-blue;
+      
+      font-size: 18px;
+    //   margin: 0 auto;
+    }
+    .calContain {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 818px;
+      height: 250px;
+    //   background-color: red;
+    //   align-items: center;
+    //   justify-content: center;
+      .cal {
+        // margin: 0 auto;
+        // background-color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        input {
+          width: 698px;
+          height: 58px;
+          font-family: GillSansL;
+        padding-left: 10px;
+        font-size: 18px;
+
+        }
+      }
+      .calSelect {
+        height: 58px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        label {
+            // padding-left: 84px;
+        }
+        // margin: 0 auto;
+        // background-color: green;
+        select {
+          width: 108px;
+          height: 58px;
+          border: 2px solid;
+      border-color: $site-blue;
+      font-family: GillSansL;
+        padding-left: 10px;
+        font-size: 18px;
+        }
+      }
+    }
+    textarea {
+        // margin-top: 0;
+        width: $home-content-width;
+        height: 192px;
+        border: 2px solid;
+      border-color: $site-blue;
+    }
+    button {
+        margin-top: 37px;
+        width: $home-content-width;
+        height: 60.59px;
+        background-color: $site-blue;
+        border: none;
+        color: $site-white;
+        border-radius: 30px;
+        font-family: GillSansReg;
+        font-size: 15px;
+    }
+  }
+}
+
+@media all and (max-width:800px) and (min-width:921px) {
+    .form {
+        background-color: green;
+        .formText {
+            background-color: blue;
+        }
+    }
+}
+
+@media all and (max-width: 920px)  {
+  .home {
+    width: 100%;
+    height: 2500px;
+    padding-bottom: 100px;
+    .hero {
+    }
+    .specials {
+        width: 100%;
+      flex-direction: column;
+      .box {
+        margin-bottom: 30px;
+      }
+    }
+    .title {
+        width: 100%;
+    }
+    .form {
+        width: 100%;
+        // background-color: orange;
+        justify-content: center;
+        margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+        .formText{
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0;
+            input {
+                width: 344px;
+                margin-left: 0px;
+            margin-right: 0px;
+            }
+            //input boxes wavy for some reason?
+        }
+        .calContain {
+            width: 100%;
+            
+            .cal {
+                justify-content: center;
+                input {
+                    width: 344px;
+                }
+            }
+        }
+        textarea#message {
+            width: 100%;
+        }
+        button {
+            width: 344px;
+        }
+    }
+  }
+}
+
+// @media all and (max-width: 840px) {
+//     form{
+//         background-color: green;
+//         input {
+//             width: 344px;
+//         }
+//         .formText {
+//             flex-direction: column;
+           
+//         }
+//     }
+// }
